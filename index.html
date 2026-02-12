@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Which Duck Are You?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="quiz-shell">
+      <h1>🦆 Which Duck Are You?</h1>
+      <p class="subtitle">Answer 3 quick questions to discover your inner duck.</p>
+
+      <section id="quiz-card" class="card"></section>
+
+      <section id="result-card" class="card hidden" aria-live="polite">
+        <h2 id="duck-title"></h2>
+        <img id="duck-image" alt="Your duck type" />
+        <p id="duck-description"></p>
+        <button id="play-again" type="button">Play Again</button>
+      </section>
+
+      <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
